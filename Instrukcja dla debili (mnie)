@@ -1,0 +1,21 @@
+Instrukcja dla debili (mnie)
+
+w backend
+node app.js
+
+w frontend
+
+npm run start
+
+
+
+Konsoleta
+fetch('http://localhost:5000/api/videos', {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify({
+        title: "tytul filmiku",
+        url: "https://www.youtube.com/watch?v=J45ugRjAiCE",
+        addedBy: "Bartosz"
+    })
+})
